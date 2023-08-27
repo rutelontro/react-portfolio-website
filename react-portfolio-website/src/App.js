@@ -5,6 +5,9 @@ import DotGroup from "./components/DotGroup";
 import Separator from "./components/Separator";
 import Landing from "./pages/Landing";
 import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Testemonials from "./pages/Testemonials";
+
 
 function App() {
   const [selectedPage, setSetectedPage] = useState('home');
@@ -37,7 +40,14 @@ function App() {
         <Separator />
         <div className="w-5/6 mx-auto md:h-full">
           <Skills />
-
+        </div>
+        <Separator />
+        <div className="w-5/6 mx-auto">
+          <Projects />
+        </div>
+        <Separator />
+        <div className="w-5/6 mx-auto">
+          <Testemonials />
         </div>
       </div>
     </div>
