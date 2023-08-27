@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./components/Navbar";
 import DotGroup from "./components/DotGroup";
-import Landing from "./scenes/Landing";
+import Separator from "./components/Separator";
+import Landing from "./pages/Landing";
+import Skills from "./pages/Skills";
 
 function App() {
   const [selectedPage, setSetectedPage] = useState('home');
   const [isTopOfPage, setIsTopOfPage] = useState(true);
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isDesktop = useMediaQuery("(min-width: 1060px)");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,13 +27,18 @@ function App() {
         setSelectedPage={setSetectedPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
-        { isAboveMediumScreens && (
+        { isDesktop && (
           <DotGroup
             selectedPage={selectedPage} 
             setSelectedPage={setSetectedPage}
           />
         )}
         <Landing setSelectedPage={setSetectedPage} />
+        <Separator />
+        <div className="w-5/6 mx-auto md:h-full">
+          <Skills />
+
+        </div>
       </div>
     </div>
   );
