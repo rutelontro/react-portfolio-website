@@ -8,6 +8,9 @@ npm i -D tailwindcss
 npx tailwindcss init
 npx tailwind -i ./src/index.css -o ./public/output.css --watch
 
+npm run start
+
+
 # VS Code Extensions
 Tailwind CSS IntelliSense
 Tailwind Documentation
