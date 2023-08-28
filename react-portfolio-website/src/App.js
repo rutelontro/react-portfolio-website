@@ -3,6 +3,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./components/Navbar";
 import DotGroup from "./components/DotGroup";
 import Separator from "./components/Separator";
+import Footer from "./components/Footer";
 import Landing from "./pages/Landing";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
@@ -31,12 +32,14 @@ function App() {
         setSelectedPage={setSetectedPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
+
         { isDesktop && (
           <DotGroup
             selectedPage={selectedPage} 
             setSelectedPage={setSetectedPage}
           />
         )}
+
         <Landing setSelectedPage={setSetectedPage} />
         <Separator />
         <div className="w-5/6 mx-auto md:h-full">
@@ -54,6 +57,8 @@ function App() {
         <div className="w-5/6 mx-auto">
           <Contact />
         </div>
+
+        <Footer />
       </div>
     </div>
   );
