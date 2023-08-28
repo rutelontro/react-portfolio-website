@@ -7,6 +7,7 @@ import Landing from "./pages/Landing";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Testemonials from "./pages/Testemonials";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -48,6 +49,10 @@ function App() {
         <Separator />
         <div className="w-5/6 mx-auto">
           <Testemonials />
+        </div>
+        <Separator />
+        <div className="w-5/6 mx-auto">
+          <Contact />
         </div>
       </div>
     </div>
