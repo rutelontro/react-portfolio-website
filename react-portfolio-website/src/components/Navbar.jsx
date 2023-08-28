@@ -31,7 +31,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                         <NavLink page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                         <NavLink page="Skills" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                         <NavLink page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                        <NavLink page="Testemonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                        <NavLink page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                         <NavLink page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                     </div>
                 ) : (
@@ -58,7 +58,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                             <NavLink page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                             <NavLink page="Skills" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                             <NavLink page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            <NavLink page="Testemonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                            <NavLink page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                             <NavLink page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                         </div>
                     </div>

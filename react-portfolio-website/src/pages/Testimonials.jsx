@@ -2,11 +2,11 @@ import Separator from '../components/Separator';
 import { motion }from "framer-motion";
 
 
-const Testemonials = () => {
-    const testemonialsStyles = "mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2";
+const Testimonials = () => {
+    const testimonialsStyles = "mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2";
     
     return (
-        <section id="testemonials" className="pt-32 pb-16">
+        <section id="testimonials" className="pt-32 pb-16">
             {/* HEADING */}
             <motion.div
                 className="md:w-1/3 text-center md:text-left"
@@ -23,10 +23,10 @@ const Testemonials = () => {
                 <Separator width="mx-auto w-3/5" />
                 <p className="mt-10">Here's What People are Saying About My Work.</p>
             </motion.div>
-            {/* TESTEMONIALS */}
+            {/* TESTIMONIALS */}
             <div className="md:flex md:justify-between gap-8">
                 <motion.div
-                    className={`bg-blue ${testemonialsStyles} before:content-person1`}
+                    className={`bg-blue ${testimonialsStyles} before:content-person1`}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -43,7 +43,7 @@ const Testemonials = () => {
                 </motion.div>
 
                 <motion.div
-                    className={`bg-red ${testemonialsStyles} before:content-person2`}
+                    className={`bg-red ${testimonialsStyles} before:content-person2`}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -61,7 +61,7 @@ const Testemonials = () => {
                 </motion.div>
 
                 <motion.div
-                    className={`bg-yellow ${testemonialsStyles} before:content-person3`}
+                    className={`bg-yellow ${testimonialsStyles} before:content-person3`}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -82,4 +82,4 @@ const Testemonials = () => {
     );
 };
 
-export default Testemonials;
+export default Testimonials;
